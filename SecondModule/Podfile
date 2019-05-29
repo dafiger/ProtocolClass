@@ -1,0 +1,34 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+#inhibit_all_warnings!
+#use_frameworks!
+
+target 'SecondModule' do
+
+	pod 'MediatorManager', :path => '../MediatorManager'
+	pod 'FirstModule', :path => '../FirstModule'
+
+end
+
+# pod update --no-repo-update
+# 实现post_install Hooks
+post_install do |installer|
+# puts 为在终端打印方法
+puts "##### post_install start #####"
+
+  # 1. 遍历项目中所有target
+  installer.pods_project.targets.each do |target|
+    # 2. 遍历build_configurations
+    target.build_configurations.each do |config|
+      # 3. 修改build_settings中的ENABLE_BITCODE
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+
+      if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 8.0
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '8.0'
+      end
+    end
+  end
+    
+puts "##### post_install end #####"
+end
