@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import "MediatorManager.h"
 #import "SecondProtocol.h"
 
 #import "SecondVC.h"
@@ -17,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SecondEntry : NSObject<SecondProtocol>
 
-- (UIViewController *)homePage:(NSString *)userID;
+//- (UIViewController *)homePage:(NSString *)userID;
 
 @end
 

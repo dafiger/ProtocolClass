@@ -4,11 +4,10 @@ platform :ios, '8.0'
 #inhibit_all_warnings!
 #use_frameworks!
 
-target 'ProClsDemo' do
+target 'App' do
 
-  pod 'MediatorManager', :path => '../MediatorManager'
-	pod 'FirstModule', :path => '../FirstModule'
-	pod 'SecondModule', :path => '../SecondModule'
+	pod 'MediatorManager', :path => '../../../MediatorManager'
+	pod 'FirstModule', :path => '../../../FirstModule'
 
 end
 
@@ -24,6 +23,10 @@ puts "##### post_install start #####"
     target.build_configurations.each do |config|
       # 3. 修改build_settings中的ENABLE_BITCODE
       config.build_settings['ENABLE_BITCODE'] = 'NO'
+
+      if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 8.0
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '8.0'
+      end
     end
   end
     

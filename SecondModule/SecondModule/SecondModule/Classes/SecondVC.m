@@ -26,11 +26,13 @@
 - (void)gotoFirst:(NSString *)userID {
     //    id obj = [[MediatorManager sharedInstance] fetchService:@protocol(FirstProtocol)];
     //    id obj = [MediatorManager moduleInstanceFromProtocol:@protocol(FirstProtocol)];
-    id obj = PRGetModuleInstance(FirstProtocol);
-    UIViewController *firstVC = [obj homePage:userID];
-    if ([firstVC isKindOfClass:[UIViewController class]]) {
-        NSLog(@"SecondVC 准备调用 firstVC");
-    }
+//#ifdef PRGetModuleInstance
+//    id obj = PRGetModuleInstance(FirstProtocol);
+//    UIViewController *firstVC = [obj homePage:userID];
+//    if ([firstVC isKindOfClass:[UIViewController class]]) {
+//        NSLog(@"SecondVC 准备调用 firstVC");
+//    }
+//#endif
 }
 
 /*

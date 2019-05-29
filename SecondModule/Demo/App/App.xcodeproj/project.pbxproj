@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C0C8E3396D3F396FF534E92B /* libPods-ProClsDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15DBF958C32A2DC3EB206AC3 /* libPods-ProClsDemo.a */; };
+		04526B3BEF9FFA6BC5C211D9 /* libPods-App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F66F9068E1D82174D8112BA /* libPods-App.a */; };
 		E32DB6B5225B2C1B005D5B75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E32DB6B4225B2C1B005D5B75 /* AppDelegate.m */; };
 		E32DB6B8225B2C1B005D5B75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E32DB6B7225B2C1B005D5B75 /* ViewController.m */; };
 		E32DB6BB225B2C1B005D5B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32DB6B9225B2C1B005D5B75 /* Main.storyboard */; };
@@ -17,10 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		15DBF958C32A2DC3EB206AC3 /* libPods-ProClsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProClsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		27B3626C9246C528B038CB29 /* Pods-ProClsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProClsDemo.release.xcconfig"; path = "Target Support Files/Pods-ProClsDemo/Pods-ProClsDemo.release.xcconfig"; sourceTree = "<group>"; };
-		6B8152007F01C4521DF86EDB /* Pods-ProClsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProClsDemo.debug.xcconfig"; path = "Target Support Files/Pods-ProClsDemo/Pods-ProClsDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		E32DB6B0225B2C1B005D5B75 /* ProClsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProClsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F66F9068E1D82174D8112BA /* libPods-App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD9ACEDDD7D0CDAD02C73F73 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
+		E32DB6B0225B2C1B005D5B75 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32DB6B3225B2C1B005D5B75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E32DB6B4225B2C1B005D5B75 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E32DB6B6225B2C1B005D5B75 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -30,6 +29,7 @@
 		E32DB6BF225B2C1C005D5B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E32DB6C1225B2C1C005D5B75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E32DB6C2225B2C1C005D5B75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA164169857ECF2E9FB80C0F /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,27 +37,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0C8E3396D3F396FF534E92B /* libPods-ProClsDemo.a in Frameworks */,
+				04526B3BEF9FFA6BC5C211D9 /* libPods-App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1FAB2E3173818EED8CB97F10 /* Pods */ = {
+		93B28B05E6EFF4A1C618F2A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6B8152007F01C4521DF86EDB /* Pods-ProClsDemo.debug.xcconfig */,
-				27B3626C9246C528B038CB29 /* Pods-ProClsDemo.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		D344D80640224E25EFD08F1C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				15DBF958C32A2DC3EB206AC3 /* libPods-ProClsDemo.a */,
+				7F66F9068E1D82174D8112BA /* libPods-App.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -65,22 +55,22 @@
 		E32DB6A7225B2C1B005D5B75 = {
 			isa = PBXGroup;
 			children = (
-				E32DB6B2225B2C1B005D5B75 /* ProClsDemo */,
+				E32DB6B2225B2C1B005D5B75 /* App */,
 				E32DB6B1225B2C1B005D5B75 /* Products */,
-				1FAB2E3173818EED8CB97F10 /* Pods */,
-				D344D80640224E25EFD08F1C /* Frameworks */,
+				E95B6CE6A047AF20AC7F66D9 /* Pods */,
+				93B28B05E6EFF4A1C618F2A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		E32DB6B1225B2C1B005D5B75 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E32DB6B0225B2C1B005D5B75 /* ProClsDemo.app */,
+				E32DB6B0225B2C1B005D5B75 /* App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E32DB6B2225B2C1B005D5B75 /* ProClsDemo */ = {
+		E32DB6B2225B2C1B005D5B75 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				E32DB6B3225B2C1B005D5B75 /* AppDelegate.h */,
@@ -93,17 +83,26 @@
 				E32DB6C1225B2C1C005D5B75 /* Info.plist */,
 				E32DB6C2225B2C1C005D5B75 /* main.m */,
 			);
-			path = ProClsDemo;
+			path = App;
+			sourceTree = "<group>";
+		};
+		E95B6CE6A047AF20AC7F66D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA164169857ECF2E9FB80C0F /* Pods-App.debug.xcconfig */,
+				AD9ACEDDD7D0CDAD02C73F73 /* Pods-App.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E32DB6AF225B2C1B005D5B75 /* ProClsDemo */ = {
+		E32DB6AF225B2C1B005D5B75 /* App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E32DB6C6225B2C1C005D5B75 /* Build configuration list for PBXNativeTarget "ProClsDemo" */;
+			buildConfigurationList = E32DB6C6225B2C1C005D5B75 /* Build configuration list for PBXNativeTarget "App" */;
 			buildPhases = (
-				C6BDC11F5FE50BCF9BD9322A /* [CP] Check Pods Manifest.lock */,
+				8C523ECDD7009B85D81F2E4A /* [CP] Check Pods Manifest.lock */,
 				E32DB6AC225B2C1B005D5B75 /* Sources */,
 				E32DB6AD225B2C1B005D5B75 /* Frameworks */,
 				E32DB6AE225B2C1B005D5B75 /* Resources */,
@@ -112,9 +111,9 @@
 			);
 			dependencies = (
 			);
-			name = ProClsDemo;
-			productName = ProClsDemo;
-			productReference = E32DB6B0225B2C1B005D5B75 /* ProClsDemo.app */;
+			name = App;
+			productName = App;
+			productReference = E32DB6B0225B2C1B005D5B75 /* App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -131,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E32DB6AB225B2C1B005D5B75 /* Build configuration list for PBXProject "ProClsDemo" */;
+			buildConfigurationList = E32DB6AB225B2C1B005D5B75 /* Build configuration list for PBXProject "App" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -144,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E32DB6AF225B2C1B005D5B75 /* ProClsDemo */,
+				E32DB6AF225B2C1B005D5B75 /* App */,
 			);
 		};
 /* End PBXProject section */
@@ -163,7 +162,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C6BDC11F5FE50BCF9BD9322A /* [CP] Check Pods Manifest.lock */ = {
+		8C523ECDD7009B85D81F2E4A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -178,7 +177,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ProClsDemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-App-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -334,14 +333,14 @@
 		};
 		E32DB6C7225B2C1C005D5B75 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B8152007F01C4521DF86EDB /* Pods-ProClsDemo.debug.xcconfig */;
+			baseConfigurationReference = EA164169857ECF2E9FB80C0F /* Pods-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = ProClsDemo/Info.plist;
+				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,14 +355,14 @@
 		};
 		E32DB6C8225B2C1C005D5B75 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27B3626C9246C528B038CB29 /* Pods-ProClsDemo.release.xcconfig */;
+			baseConfigurationReference = AD9ACEDDD7D0CDAD02C73F73 /* Pods-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = ProClsDemo/Info.plist;
+				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,7 +378,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E32DB6AB225B2C1B005D5B75 /* Build configuration list for PBXProject "ProClsDemo" */ = {
+		E32DB6AB225B2C1B005D5B75 /* Build configuration list for PBXProject "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E32DB6C4225B2C1C005D5B75 /* Debug */,
@@ -388,7 +387,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E32DB6C6225B2C1C005D5B75 /* Build configuration list for PBXNativeTarget "ProClsDemo" */ = {
+		E32DB6C6225B2C1C005D5B75 /* Build configuration list for PBXNativeTarget "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E32DB6C7225B2C1C005D5B75 /* Debug */,

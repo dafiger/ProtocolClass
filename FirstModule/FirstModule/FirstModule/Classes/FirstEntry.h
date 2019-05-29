@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FirstEntry : NSObject<FirstProtocol>
 
-- (UIViewController *)homePage:(NSString *)userID;
+//- (UIViewController *)homePage:(NSString *)userID;
 
 @end
 

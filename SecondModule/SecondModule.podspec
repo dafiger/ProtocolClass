@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "SecondModule"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of SecondModule."
+  spec.summary      = "SecondModule."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,10 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-                        SecondModule
+                        This is SecondModule
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/SecondModule"
+  spec.homepage     = "https://github.com/dafiger"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,7 +39,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -53,7 +53,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "dafiger" => "dafiger2000@qq.com" }
+  spec.author             = "dafiger"
   # Or just: spec.author    = "dafiger"
   # spec.authors            = { "dafiger" => "dafiger2000@qq.com" }
   # spec.social_media_url   = "https://twitter.com/dafiger"
@@ -80,7 +80,8 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/dafiger.git", :tag => "#{spec.version}" }
+  # spec.source       = { :git => "https://github.com/dafiger.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/dafiger.git", :tag => spec.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,9 +92,9 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.prefix_header_contents = '#import "MediatorManager.h"','#import "FirstProtocol.h"'
+  #spec.prefix_header_contents = '#import "MediatorManager.h"','#import "FirstProtocol.h"'
   spec.source_files  = "SecondModule/SecondModule/Classes/**/*"
-  spec.exclude_files = "Classes/Exclude"
+  # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -135,5 +136,6 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+  # spec.dependency 'BaseModel', :path => 'BaseProject/BaseModel'
 
 end
